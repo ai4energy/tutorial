@@ -1,0 +1,14 @@
+version: "3"
+services:
+  datascience-notebook:
+    image: jupyterfullstack
+    container_name: jupyterfullstack   
+    # environment:
+    #   - JUPYTER_ENABLE_LAB=yes
+    #   - NB_UMASK=022
+    #   - CHOWN_HOME=yes
+    #   - CHOWN_HOME_OPTS=-R
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebook:/home/jovyan/work
