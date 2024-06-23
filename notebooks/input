@@ -1,3 +1,0 @@
-do i = 1, n
-    j = j + i
-end do
